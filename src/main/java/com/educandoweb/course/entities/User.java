@@ -1,12 +1,19 @@
-package entities;
+package com.educandoweb.course.entities;
 
+
+import jakarta.persistence.*;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+@Entity
+@Table(name = "tb_user")
 public class User implements Serializable {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
     private String email;
@@ -14,6 +21,8 @@ public class User implements Serializable {
     private String password;
 
     private List<Order> orders = new ArrayList<>();
+
+    public User(){}
 
     public User(Integer id, String name, String email, String phone, String password) {
         this.id = id;
