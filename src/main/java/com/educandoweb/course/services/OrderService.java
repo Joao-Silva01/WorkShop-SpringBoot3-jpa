@@ -1,4 +1,4 @@
-package com.educandoweb.course.entities.services;
+package com.educandoweb.course.services;
 
 import com.educandoweb.course.entities.Order;
 import com.educandoweb.course.repositories.OrderRepository;
@@ -18,7 +18,7 @@ public class OrderService {
         return  repository.findAll();
     }
 
-    public Order findById( Integer id){
+    public Order findById( Long id){
         Optional<Order> obj = repository.findById(id);
         return obj.get();
     }
