@@ -2,7 +2,7 @@
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/Joao-Silva01/WorkShop-SpringBoot3-jpa/blob/main/LICENSE)
 # Descrição
 Este projeto é um serviço web utilizando Spring Boot, JPA e Hibernate, estruturado em camadas lógicas 
-(resource, service, repository). O projeto utiliza um banco de dados H2 para testes e implementa operações CRUD (Create, Retrieve, Update, Delete) com tratamento de exceções.
+(resource, service, repository). O projeto utiliza um banco de dados H2 para testes e implementa operações CRUD com tratamento de exceções.
 
 # Como iniciar o projeto
 ### Pré-requisitos
